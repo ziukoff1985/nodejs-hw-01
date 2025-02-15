@@ -3,9 +3,9 @@ import fs from 'node:fs/promises';
 
 export const writeContacts = async (updatedContacts) => {
   try {
-    const jsonData = JSON.stringify(updatedContacts);
+    const jsonData = JSON.stringify(updatedContacts, null, 2);
     await fs.writeFile(PATH_DB, jsonData, 'utf-8');
   } catch (error) {
-    console.log(error);
+    console.error(error);
   }
 };

@@ -12,6 +12,7 @@ const generateContacts = async (number) => {
     contacts.push(...newContacts);
 
     await writeContacts(contacts);
+    console.log(`✅ Контакти успішно створені в кількості: ${number} шт.`);
   } catch (error) {
     console.error(error);
   }
