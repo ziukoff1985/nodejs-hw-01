@@ -6,7 +6,7 @@ export const removeLastContact = async () => {
     const contacts = await readContacts();
 
     if (contacts.length === 0) {
-      console.log('📭 Список контактів порожній. Видалення неможливе.');
+      console.log('❌ Список контактів порожній. Видалення неможливе.');
       return;
     }
     contacts.pop();
