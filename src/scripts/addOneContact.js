@@ -17,7 +17,7 @@ export const addOneContact = async () => {
       `✅ Деталі нового контакту: ${JSON.stringify(newContact, null, 2)}`,
     );
   } catch (error) {
-    console.error(error);
+    console.error('❌ Сталася помилка при додаванні нового контакту:', error);
   }
 };
 

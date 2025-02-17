@@ -12,7 +12,7 @@ export const getAllContacts = async () => {
 
     return contacts;
   } catch (error) {
-    console.error(error);
+    console.error('❌ Сталася помилка при отриманні контактів:', error);
   }
 };
 

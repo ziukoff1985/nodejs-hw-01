@@ -5,7 +5,7 @@ export const countContacts = async () => {
     const contacts = await readContacts();
     return `✅ Загальна кількість контактів - ${contacts.length}`;
   } catch (error) {
-    console.error(error);
+    console.error('❌ Сталася помилка при підрахунку контактів:', error);
   }
 };
 

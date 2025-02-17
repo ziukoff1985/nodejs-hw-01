@@ -13,7 +13,7 @@ const generateContacts = async (number) => {
 
     console.log(`✅ Контакти успішно створені в кількості: ${number} шт.`);
   } catch (error) {
-    console.error(error);
+    console.error('❌ Сталася помилка при створенні контактів:', error);
   }
 };
 

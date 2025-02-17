@@ -13,7 +13,7 @@ export const removeLastContact = async () => {
     await writeContacts(contacts);
     console.log('✅ Контакт успішно видалений');
   } catch (error) {
-    console.error(error);
+    console.error('❌ Сталася помилка при видаленні контакту:', error);
   }
 };
 
