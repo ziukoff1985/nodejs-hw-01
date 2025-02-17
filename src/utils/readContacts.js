@@ -1,11 +1,17 @@
+// Імпортуємо константу 'PATH_DB' (шлях до файлу 'db.json' з даними контактів)
 import { PATH_DB } from '../constants/contacts.js';
+// Імпортуємо модуль 'fs' для роботи з файловою системою
 import fs from 'node:fs/promises';
 
+// Функція для читання контактів з файлу 'db.json'
 export const readContacts = async () => {
   try {
+    // Читаємо дані з файлу db.json
     const data = await fs.readFile(PATH_DB, 'utf-8');
-    return JSON.parse(data);
+    // Якщо дані існують - парсимо їх з формату 'json'
+    // Якщо 'db.json' порожній - повертаємо порожній масив
+    return data ? JSON.parse(data) : [];
   } catch (error) {
-    console.error(error);
+    console.error('❌ Сталася помилка при читанні контактів:', error);
   }
 };
