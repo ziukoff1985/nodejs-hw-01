@@ -15,7 +15,6 @@ export const getAllContacts = async () => {
       console.log(`✅ Загальна кількість контактів: ${contacts.length}`);
       console.log('✅ Список контактів:');
     }
-
     // Повертаємо масив контактів
     return contacts;
   } catch (error) {
