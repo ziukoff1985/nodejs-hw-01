@@ -1,6 +1,7 @@
-import { readContacts } from '../utils/readContacts.js';
-import { createFakeContact } from '../utils/createFakeContact.js';
-import { writeContacts } from '../utils/writeContacts.js';
+// Імпортуємо функції для роботи з контактами
+import { readContacts } from '../utils/readContacts.js'; // Читання контактів
+import { createFakeContact } from '../utils/createFakeContact.js'; // Створення фейкових контактів
+import { writeContacts } from '../utils/writeContacts.js'; // Запис контактів
 
 // Функція для створення нових контактів
 // 'number' - кількість контактів які потрібно згенерувати

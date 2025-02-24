@@ -10,6 +10,7 @@ export const writeContacts = async (updatedContacts) => {
     // Перетворюємо масив контактів у рядок формату JSON
     const jsonData = JSON.stringify(updatedContacts, null, 2);
     // Записуємо рядок 'jsonData' у файл
+    // encoding - кодування даних (utf-8)
     await fs.writeFile(PATH_DB, jsonData, { encoding: 'utf-8' });
   } catch (error) {
     console.error('❌ Сталася помилка при записі контактів:', error);
