@@ -14,6 +14,7 @@ export const writeContacts = async (updatedContacts) => {
     // encoding - кодування даних (utf-8)
     await fs.writeFile(PATH_DB, jsonData, { encoding: 'utf-8' });
   } catch (err) {
+    // Виводимо повідомлення про помилку при записі контактів
     console.error('❌ Сталася помилка при записі контактів:', err);
   }
 };
