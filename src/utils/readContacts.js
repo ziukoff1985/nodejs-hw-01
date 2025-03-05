@@ -13,6 +13,7 @@ export const readContacts = async () => {
     // Якщо 'db.json' порожній - повертаємо порожній масив
     return data ? JSON.parse(data) : [];
   } catch (error) {
+    // Виводимо повідомлення про помилку при читанні контактів
     console.error('❌ Сталася помилка при читанні контактів:', error);
   }
 };
