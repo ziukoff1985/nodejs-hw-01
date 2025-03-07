@@ -2,7 +2,7 @@
 // для створення фейкових даних контактів
 import { faker } from '@faker-js/faker';
 
-// Функція для створення фейкового контакту
+// Функція для створення "фейкового" контакту
 export const createFakeContact = () => ({
   id: faker.string.uuid(), // унікальний ідентифікатор
   name: faker.person.fullName(), // повне ім я користувача
