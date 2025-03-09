@@ -4,7 +4,7 @@ import { createFakeContact } from '../utils/createFakeContact.js'; // Створ
 import { writeContacts } from '../utils/writeContacts.js'; // Запис контактів
 
 // Функція для створення нових контактів
-// 'number' - кількість контактів які потрібно згенерувати
+// 'number' --> кількість контактів які потрібно згенерувати
 const generateContacts = async (number) => {
   try {
     // Читаємо контакти з файлу 'db.json'
@@ -18,7 +18,7 @@ const generateContacts = async (number) => {
     // Додаємо нові контакти до вже існуючих
     contacts.push(...newContacts);
 
-    // Записуємо оновлений масив контактів у файл 'db.json'
+    // Записуємо оновлений масив контактів --> у файл 'db.json'
     await writeContacts(contacts);
 
     // Виводимо повідомлення про успішну генерацію контактів
