@@ -29,5 +29,5 @@ const generateContacts = async (number) => {
   }
 };
 
-// Викликаємо функцію 'generateContacts' для генерації 5 нових контактів
+// Викликаємо функцію 'generateContacts' для створення 5 нових контактів
 generateContacts(5);
