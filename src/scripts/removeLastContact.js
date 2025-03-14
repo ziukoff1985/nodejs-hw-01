@@ -3,7 +3,7 @@ import { readContacts } from '../utils/readContacts.js';
 // Імпортуємо функцію 'writeContacts' для запису контактів у файл 'db.json'
 import { writeContacts } from '../utils/writeContacts.js';
 
-// Функція для видалення останнього контакту
+// Асинхронна функція для видалення останнього контакту
 export const removeLastContact = async () => {
   try {
     // Читаємо контакти з файлу 'db.json'

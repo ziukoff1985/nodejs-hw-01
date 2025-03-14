@@ -1,7 +1,7 @@
 // Імпортуємо функцію 'readContacts' для читання контактів з файлу 'db.json'
 import { readContacts } from '../utils/readContacts.js';
 
-// Функція для отримання всіх контактів
+// Асинхронна функція для отримання всіх контактів
 export const getAllContacts = async () => {
   try {
     // Читаємо контакти з файлу 'db.json'

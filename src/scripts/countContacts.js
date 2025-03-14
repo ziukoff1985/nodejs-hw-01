@@ -4,7 +4,7 @@ import { readContacts } from '../utils/readContacts.js';
 // Імпортуємо модуль 'path' для роботи з шляхами
 import path from 'node:path';
 
-// Функція для підрахунку загальної кількості контактів
+// Асинхронна функція для підрахунку загальної кількості контактів
 export const countContacts = async () => {
   try {
     // Читаємо контакти з файлу 'db.json'

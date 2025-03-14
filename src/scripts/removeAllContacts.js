@@ -2,7 +2,7 @@
 import { readContacts } from '../utils/readContacts.js'; // Читання контактів
 import { writeContacts } from '../utils/writeContacts.js'; // Запис контактів
 
-// Функція для видалення всіх контактів
+// Асинхронна функція для видалення всіх контактів
 export const removeAllContacts = async () => {
   try {
     // Читаємо контакти з файлу 'db.json'

@@ -8,7 +8,7 @@ import { createFakeContact } from '../utils/createFakeContact.js';
 // для читання контактів з файлу 'db.json'
 import { readContacts } from '../utils/readContacts.js';
 
-// Функція для додавання одного нового контакту
+// Асинхронна функція для додавання одного нового контакту
 export const addOneContact = async () => {
   try {
     // Читаємо контакти з файлу 'db.json'

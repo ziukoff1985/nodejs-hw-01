@@ -3,7 +3,7 @@ import { readContacts } from '../utils/readContacts.js'; // Читання ко�
 import { createFakeContact } from '../utils/createFakeContact.js'; // Створення фейкових контактів
 import { writeContacts } from '../utils/writeContacts.js'; // Запис контактів
 
-// Функція для створення нових контактів
+// Асинхронна функція для створення нових контактів
 // 'number' --> кількість контактів які потрібно згенерувати
 const generateContacts = async (number) => {
   try {
