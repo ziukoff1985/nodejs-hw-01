@@ -3,7 +3,8 @@ import { PATH_DB } from '../constants/contacts.js';
 // Імпортуємо модуль 'fs' для роботи з файловою системою
 import * as fs from 'node:fs/promises';
 
-// Функція для читання контактів з файлу 'db.json'
+// Асинхронна функція для читання контактів з файлу 'db.json'
+// Функція повертає масив контактів або порожній масив
 export const readContacts = async () => {
   try {
     // Читаємо дані з файлу db.json
