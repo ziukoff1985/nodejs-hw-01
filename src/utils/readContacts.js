@@ -10,8 +10,8 @@ export const readContacts = async () => {
     // Читаємо дані з файлу db.json
     // encoding - кодування даних (utf-8)
     const data = await fs.readFile(PATH_DB, { encoding: 'utf-8' });
-    // Якщо дані існують - парсимо їх з формату 'json'
-    // Якщо 'db.json' порожній - повертаємо порожній масив
+    // Якщо дані існують --> парсимо їх з формату 'json'
+    // Якщо 'db.json' порожній --> повертаємо порожній масив
     return data ? JSON.parse(data) : [];
   } catch (error) {
     // Виводимо повідомлення про помилку при читанні контактів
